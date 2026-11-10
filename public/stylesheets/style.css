@@ -96,11 +96,36 @@ section p {
 .about-section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 25px;
+  padding: 80px 25px;
+  text-align: center;
+}
+
+.about-section h1 {
+  margin-bottom: 15px;
 }
 
 .about-section h2 {
-  margin-top: 30px;
+  color: #287094;
+  margin-bottom: 30px;
+}
+
+.about-box {
+  background-color: #e3edf2;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-box h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 0;
 }
 
 /* Projects Page */
