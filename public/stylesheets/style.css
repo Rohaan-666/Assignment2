@@ -196,6 +196,15 @@ section p {
   background-color: #172a3a;
 }
 
+.contact-section .btn-secondary {
+  background-color: #52616b;
+  margin-left: 10px;
+}
+
+.contact-section .btn-secondary:hover {
+  background-color: #263238;
+}
+
 /* Footer */
 
 footer {

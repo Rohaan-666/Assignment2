@@ -1,0 +1,51 @@
+<section class="contact-section">
+
+    <h1 class="text-center">🗺️Contact Me🗺️</h1>
+
+    <p class="text-center">
+        Have a question or want to get in touch?
+        Feel free to send me a message!
+    </p>
+
+    <form action="/contact" method="POST">
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Message -->
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..."
+            required></textarea>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="robot" name="robot" required>
+
+            <label class="form-check-label" for="robot">
+                I'm not a robot🤖
+            </label>
+        </div>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit" class="btn">
+            Submit
+        </button>
+
+        <button type="reset" class="btn btn-secondary">
+            Reset
+        </button>
+
+    </form>
+
+    <% if (typeof submitted !== 'undefined' && submitted) { %>
+    <p class="text-center mt-3">
+        Thank you! Your form was submitted successfully.
+    </p>
+    <% } %>
+
+</section>
