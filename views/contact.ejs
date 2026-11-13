@@ -1,17 +1,28 @@
 <section class="contact-section">
 
-    <h1 class="text-center">🗺️Contact Me🗺️</h1>
+    <h1 class="text-center">🗺️ Contact Me 🗺️</h1>
 
     <p class="text-center">
         Have a question or want to get in touch?
         Feel free to send me a message!
     </p>
 
-    <form action="/contact" method="POST">
+    <form action="mailto:rohaan.khan@ontarotechu.net?subject=Contact_Form" method="POST" enctype="text/plain">
 
-        <!-- Name -->
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        <!-- First Name -->
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Enter your first name"
+            required>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your last name"
+            required>
+
+        <!-- Cell Number -->
+        <label for="phone">Cell Number (xxx-xxx-xxxx)</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your cell phone number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
 
         <!-- Email -->
         <label for="email">Email</label>
@@ -41,11 +52,5 @@
         </button>
 
     </form>
-
-    <% if (typeof submitted !== 'undefined' && submitted) { %>
-    <p class="text-center mt-3">
-        Thank you! Your form was submitted successfully.
-    </p>
-    <% } %>
 
 </section>

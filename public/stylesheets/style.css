@@ -38,7 +38,9 @@ main {
 
 /* Headings */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #172a3a;
   font-weight: bold;
 }
@@ -66,7 +68,7 @@ section p {
 
 /* Home Page */
 
-.home-section{
+.home-section {
   padding: 150px 20px;
   text-align: center;
 }
@@ -107,6 +109,17 @@ section p {
 .about-section h2 {
   color: #287094;
   margin-bottom: 30px;
+}
+
+/* About Me Profile Picture */
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 25px;
 }
 
 .about-box {
@@ -229,7 +242,7 @@ footer a:hover {
 footer p {
   margin-top: 15px;
   margin-bottom: 0;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 /* Tablet Screen */
