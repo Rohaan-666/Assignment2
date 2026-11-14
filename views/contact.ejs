@@ -7,7 +7,7 @@
         Feel free to send me a message!
     </p>
 
-    <form action="mailto:rohaan.khan@ontariotechu.net?subject=Contact_Form" method="POST" enctype="text/plain">
+    <form action="/contact" method="POST">
 
         <!-- First Name -->
         <label for="firstName">First Name</label>
@@ -52,5 +52,11 @@
         </button>
 
     </form>
+
+    <% if (typeof submitted !== 'undefined' && submitted) { %>
+    <p class="text-center mt-3">
+        Thank you! Your form was submitted successfully.
+    </p>
+    <% } %>
 
 </section>
